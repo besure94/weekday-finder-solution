@@ -10,7 +10,7 @@ namespace WeekdayFinder.Tests
     [TestMethod]
     public void DateConstructor_CreatesInstanceOfDate_Date()
     {
-      Date newDate = new Date(9);
+      Date newDate = new Date(9, 21);
       Assert.AreEqual(typeof(Date), newDate.GetType());
     }
 
@@ -18,7 +18,7 @@ namespace WeekdayFinder.Tests
     public void GetMonth_ReturnsMonth_Int()
     {
       int month = 9;
-      Date newDate = new Date(month);
+      Date newDate = new Date(month, 21);
       int result = newDate.Month;
       Assert.AreEqual(month, result);
     }
@@ -26,10 +26,19 @@ namespace WeekdayFinder.Tests
     [TestMethod]
     public void SetMonth_SetsValueOfMonth_Void()
     {
-      Date newDate = new Date(9);
+      Date newDate = new Date(9, 21);
       int newMonth = 12;
       newDate.Month = newMonth;
       Assert.AreEqual(newMonth, newDate.Month);
+    }
+
+    [TestMethod]
+    public void GetDay_ReturnsDay_Int()
+    {
+      int day = 21;
+      Date newDate = new Date(9, day);
+      int result = newDate.Day;
+      Assert.AreEqual(day, result);
     }
 
   }

@@ -10,9 +10,12 @@ namespace WeekdayFinder.Models
       set { _month = value; }
     }
 
-    public Date(int month)
+    public int Day { get; }
+
+    public Date(int month, int day)
     {
       _month = month;
+      Day = day;
     }
   }
 }
