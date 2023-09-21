@@ -11,11 +11,18 @@ namespace WeekdayFinder.Models
     }
 
     public int Day { get; set; }
+    private int _year;
 
-    public Date(int month, int day)
+    public Date(int month, int day, int year)
     {
       _month = month;
       Day = day;
+      _year = year;
+    }
+
+    public int GetYear()
+    {
+      return _year;
     }
   }
 }
