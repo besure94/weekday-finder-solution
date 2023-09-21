@@ -59,5 +59,14 @@ namespace WeekdayFinder.Tests
       Assert.AreEqual(year, result);
     }
 
+    [TestMethod]
+    public void SetYear_SetsValueOfYear_Void()
+    {
+      Date newDate = new Date(9, 21, 2023);
+      int newYear = 1994;
+      newDate.SetYear(newYear);
+      Assert.AreEqual(newYear, newDate.GetYear());
+    }
+
   }
 }

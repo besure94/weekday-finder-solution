@@ -24,5 +24,10 @@ namespace WeekdayFinder.Models
     {
       return _year;
     }
+
+    public void SetYear(int newValue)
+    {
+      _year = newValue;
+    }
   }
 }
