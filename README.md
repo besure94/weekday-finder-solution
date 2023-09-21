@@ -30,3 +30,9 @@ MIT
 
 Copyright(c) 2023 Brian Scherner
 
+## Prompt
+
+Make an console app that allows users to input a day of the year (like 7/11/2014) and then write a method to find out what day of the week it was, i.e. Monday, Tuesday, etc. As you complete this prompt, make sure to meet the following requirements:
+
+Use TDD and the RGR workflow to develop your business logic.
+Create your business logic before you create your UI logic.
