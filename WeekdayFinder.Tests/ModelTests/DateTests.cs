@@ -41,5 +41,14 @@ namespace WeekdayFinder.Tests
       Assert.AreEqual(day, result);
     }
 
+    [TestMethod]
+    public void SetDay_SetsValueOfDay_Void()
+    {
+      Date newDate = new Date(9, 21);
+      int newDay = 6;
+      newDate.Day = newDay;
+      Assert.AreEqual(newDay, newDate.Day);
+    }
+
   }
 }
