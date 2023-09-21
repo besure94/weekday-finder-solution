@@ -23,5 +23,14 @@ namespace WeekdayFinder.Tests
       Assert.AreEqual(month, result);
     }
 
+    [TestMethod]
+    public void SetMonth_SetsValueOfMonth_Void()
+    {
+      Date newDate = new Date(9);
+      int newMonth = 12;
+      newDate.Month = newMonth;
+      Assert.AreEqual(newMonth, newDate.Month);
+    }
+
   }
 }
