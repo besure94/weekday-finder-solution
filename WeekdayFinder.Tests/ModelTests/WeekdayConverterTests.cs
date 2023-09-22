@@ -73,5 +73,13 @@ namespace WeekdayFinder.Tests
       Assert.AreEqual("Saturday", dateResult);
     }
 
+    [TestMethod]
+    public void GetWeekdayForDate_ChecksWeekdayConverterForValidDate_String()
+    {
+      WeekdayConverter inputtedDate = new WeekdayConverter(19941, 12, 23);
+      string errorResult = inputtedDate.GetWeekdayForDate();
+      Assert.AreEqual("Can't calculate weekday, please enter a valid date.", errorResult);
+    }
+
   }
 }

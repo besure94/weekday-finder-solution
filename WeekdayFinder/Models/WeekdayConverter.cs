@@ -19,9 +19,17 @@ namespace WeekdayFinder.Models
 
     public string GetWeekdayForDate()
     {
-      DateTime dateValue = new DateTime(Year, Month, Day);
-      string weekday = dateValue.ToString("dddd");
-      return weekday;
+      if ((Year > 9999) || (Year < 0001) || ((Month > 12) || (Month < 1)) ||  ((Day > 31) || (Day < 1)))
+      {
+        return "Can't calculate weekday, please enter a valid date.";
+      }
+      else
+      {
+        DateTime dateValue = new DateTime(Year, Month, Day);
+        string weekday = dateValue.ToString("dddd");
+        return weekday;
+      }
     }
+
   }
 }
