@@ -55,9 +55,9 @@ namespace WeekdayFinder
     static void GetWeekdayForDate(WeekdayConverter date)
     {
       string result = date.GetWeekdayForDate();
-      Console.WriteLine("-----------------------------------------");
+      Console.WriteLine("-----------------------------------------------------");
       Console.WriteLine("The weekday for this date was: " + result);
-      Console.WriteLine("-----------------------------------------");
+      Console.WriteLine("-----------------------------------------------------");
       Console.WriteLine("What's next?");
       Console.WriteLine("Would you like to check a new date (new)?");
       Console.WriteLine("Otherwise, you can enter 'quit' to exit this program.");

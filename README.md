@@ -1,6 +1,6 @@
-# Shape Tracker
+# Weekday Finder
 
-#### An application that checks various shapes for their properties and types.
+#### An application that allows users to find what weekday a date occurred on.
 
 #### By Brian Scherner
 
@@ -11,12 +11,12 @@
 
 ## Description
 
-This application allows users to input numbers for a triangle or rectangle to determine it's type and other properties. It contains functionality for determining an equilateral, isosceles, or scalene triangle, and for determining the area and type of a rectangle. Users can also view a list of all triangles they have created, and clear the list and start over if they wish to do so.
+This application allows users to enter a date in 'year, month, day' format (ex: 1918/7/4), and they can find out what day of the week that date occurred on. Any date from January 1, 0001 to December 31, 9999 is considered valid for this application.
 
 ### Setup Instructions
 
 1. Clone this repo.
-2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called `ShapeTracker`.
+2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called `WeekdayFinder`.
 3. In the command line, run the command `dotnet run` to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal.
 4. Optionally, you can run `dotnet build` to compile this console app without running it.
 
@@ -29,10 +29,3 @@ Application is functioning as desired, although I plan to add UI functionality t
 MIT
 
 Copyright(c) 2023 Brian Scherner
-
-## Prompt
-
-Make an console app that allows users to input a day of the year (like 7/11/2014) and then write a method to find out what day of the week it was, i.e. Monday, Tuesday, etc. As you complete this prompt, make sure to meet the following requirements:
-
-Use TDD and the RGR workflow to develop your business logic.
-Create your business logic before you create your UI logic.
